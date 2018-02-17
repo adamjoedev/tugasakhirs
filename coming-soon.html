@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Merope - Material Design HTML5 Temlate | Coming Soon</title>
+		<meta name="keywords" content="material, design, website, template, html5">
+		<meta name="description" content="Material Design HTML5 Website Template">
+		
+		<link rel="apple-touch-icon" href="img/apple-icon.png">
+		<link rel="icon" type="image/png" href="img/favicon.png">
+		
+		<!-- Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/material-kit.css">
+		
+		<link rel="stylesheet" href="css/coming-soon.css">
+		
+		<script src="js/vendor/modernizr.js"></script>
+		
+	</head>
+	<body class="coming-soon">
+		
+		<div class="table-wrap">
+			<div class="cell-wrap">
+			
+				<div class="container">
+				
+					<header>
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3">
+								<h4 class="headline"><a href="index.html">Merope</a></h4>
+							</div>
+						</div>
+					</header>
+					
+					<main>
+						<section>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+									<h3 class="title">We are Coming Soon</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, inventore. <br> Deleniti quasi, sed repellat hic facere odio. Rem voluptate, impedit neque amet iure dolorem.</p>
+								</div>
+							</div>
+						</section>		
+						<section>
+							<div class="row">
+								<div class="col-sm-8 col-sm-offset-2">
+									<!-- Countdown Timer -->
+									<div id="timer" class="timer"></div>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="row">
+								<div class="col-sm-4 col-sm-offset-4">
+									<!-- Progress Bar -->
+									<div class="progress progress-line-info">
+										<div class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0"></div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</main>
+					
+					<footer class="footer">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3">
+								<ul class="social-list footer-menu">
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-pinterest"></a></li>
+									<li><a href="#" class="fa fa-instagram"></a></li>
+									<li><a href="#" class="fa fa-dribbble"></a></li>
+									<li><a href="#" class="fa fa-behance"></a></li>
+								</ul>
+								<!-- Footer Nav -->
+								<nav class="footer-nav">
+									<ul class="is-translated">
+										<li>
+											<!-- Button trigger modal -->
+											<button type="button" class="btn btn-simple btn-circle" data-toggle="modal" data-target="#subscribeModal">
+												Subscribe
+											</button>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</footer>
+					
+				</div><!-- /container -->
+				
+			</div><!-- /cell-wrap -->
+		</div><!-- /table-wrap -->
+		
+		
+		<!-- Subscribe Modal -->
+		<div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document"><!-- modal-sm -->
+				<div class="modal-content text-center">
+				
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="material-icons">clear</span></button>
+						<h3 class="title modal-title" id="myModalLabel">Subscribe</h3>
+					</div>
+					
+					<!-- Modal Body -->
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-1">
+								<p class="lead">Be first notified about launch</p>
+								<p>We respect your privacy. We will never sell, rent or share your email address</p>
+								<!-- Form wrap with Form -->
+								<div class="form-wrap">
+									<form action="php/newsletter-form.php" id="contact-form">
+										<div class="form-group">
+											<label class="control-label" for="email"></label>
+											<input class="form-control text-center" name="email" id="email" type="email" placeholder="Email address" value="" />
+											<span class="form-error"></span>
+										</div>
+										<input type="submit" value="Subscribe" class="btn btn-primary" data-loading-text="Loading...">
+									</form>
+								</div><!-- /.form-wrap -->
+							</div>
+						</div>
+					</div><!-- /.modal-body -->
+				</div>
+			</div>
+		</div>
+		
+		<!-- Success Alert -->
+		<div class="alert alert-success hidden" id="contact-success">
+			<div class="container-fluid">
+				<div class="alert-icon">
+					<i class="material-icons">check</i>
+				</div>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true"><i class="material-icons">clear</i></span>
+				</button>
+				<b>Success!</b> Thank you for your message.
+			</div>
+		</div>
+		<!-- Error Alert -->
+		<div class="alert alert-danger hidden" id="contact-error">
+			<div class="container-fluid">
+				<div class="alert-icon">
+					<i class="material-icons">error</i>
+				</div>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true"><i class="material-icons">clear</i></span>
+				</button>
+				<b>Error!</b> Something went wrong!
+			</div>
+		</div>
+		
+		<!-- Scripts
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/material.min.js"></script>
+		
+		<script src="js/vendor/jquery.countdown.min.js"></script>
+		<script src="js/vendor/jquery.transit.min.js"></script>
+		<script src="js/coming-soon.js"></script>
+		
+		<!-- Contact Form -->
+		<script src="js/vendor/jquery.validate.min.js"></script>
+		<script src="js/contact.js"></script>
+		
+	</body>
+</html>
